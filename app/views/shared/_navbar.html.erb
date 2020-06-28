@@ -133,7 +133,7 @@ color: gray;
   <!-- Logo -->
 
   <%= link_to root_path, class: "navbar-wagon-brand" do %>
-    <%= image_tag "logofim.png", height: 30 %>
+    <%= image_tag "https://salaodebelezadelivery.com.br//franquias/2/21698/editor-html/4213895.png", height: 30 %>
   <% end %>
 
   <!-- Right Navigation -->
@@ -146,11 +146,11 @@ color: gray;
     <a href="https://www.instagram.com/entrevistadescomplicadaoficial/" target="_blank"><i class="fab fa-instagram  icon-style-navbar"></i></a>
     <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter icon-style-navbar hide"></i></a>
     <a href="https://www.linkedin.com/company/entrevista-descomplicada" target="_blank"><i class="fab fa-linkedin icon-style-navbar"></i></a>
-    <%= link_to "Blog", root_path, class: "navbar-wagon-item-cidade navbar-wagon-link hide" %>
-    <%= link_to "Vídeos", root_path, class: "navbar-wagon-item-cidade navbar-wagon-link hide" %>
-    <%= link_to "Portal de vagas", portal_de_vagas_path, class: "navbar-wagon-item-cidade navbar-wagon-link" %>
-    <%= link_to "Recursos", curriculo_campeao_path, class: "navbar-wagon-item-cidade navbar-wagon-link" %>
-    <%= link_to "Contato", root_path, class: "navbar-wagon-item-cidade navbar-wagon-link hide" %>
+    <%= link_to "Blog", root_path, class: "navbar-wagon-item-cidade navbar-wagon-link" %>
+    <%#= link_to "Vídeos", root_path, class: "navbar-wagon-item-cidade navbar-wagon-link" %>
+    <%#= link_to "Portal de vagas", portal_de_vagas_path, class: "navbar-wagon-item-cidade navbar-wagon-link" %>
+    <%#= link_to "Recursos", curriculo_campeao_path, class: "navbar-wagon-item-cidade navbar-wagon-link" %>
+    <%#= link_to "Contato", root_path, class: "navbar-wagon-item-cidade navbar-wagon-link hide" %>
     <%= link_to "Sobre", sobre_path, class: "navbar-wagon-item-cidade navbar-wagon-link" %>
     <% if user_signed_in? %>
       <%= link_to destroy_user_session_path, method: :delete do %>

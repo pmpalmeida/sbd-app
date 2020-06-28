@@ -7,6 +7,14 @@
   margin: 20px;
   font-size: 2.5vh;
 }
+
+.round-img {
+  border-radius: 50%;
+}
+
+.img-size {
+  height: 150px;
+}
 </style>
 
 <div style="
@@ -16,24 +24,33 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
 padding: 3vh; z-index: 10; position:relative; color: gray;">
 
   <div class="container" style="color: white;">
-  <h2>Quem somos nós:</h2>
-  <br>
   <div class="row">
     <div class="col-xs-12 col-sm-6">
       <center>
+        <h2>Um pouco sobre Theille Felix:</h2>
+        <br>
         <div style="margin-bottom: 3vh;">
-          <%= image_tag "logofim.png", class: 'img-responsive center-block fit-image', alt: "Entrevista Descomplicada" %> <br>
+          <%= image_tag "https://imulherempreendedora.com.br/system/users/12355/avatars_normal.jpg", class: 'img-responsive center-block fit-image round-img', alt: "Entrevista Descomplicada" %> <br>
+          <p style="font-size: 2.5vh;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus temporibus minima, ex corporis fugit harum eum dignissimos aliquam eius at exercitationem dolorum quisquam impedit, in voluptatibus facere assumenda rem sed. </p>
         </div>
       </center>
     </div>
 
     <div class="col-xs-12 col-sm-6">
         <div style="margin: 1vh;">
-          <p style="font-size: 2.5vh;">O projeto <strong>Entrevista Descomplicada</strong> nasceu da insatisfação com os processos de seleção das grandes empresas. Cada vez mais nós (candidatos) estamos mais preparados e ainda assim recebemos um NÃO em entrevistas sem nenhum tipo de explicação. Aqui o candidato vai receber <strong>informações em detalhe sobre como se preparar</strong> e conseguir a tão sonhada vaga de trabalho.</p>
-          <br>
-          <%= link_to sobre_path do %>
-            <center><div href="" class="btn btn-text" style="margin-top: -0.3vh;">Saiba mais</div></center>
+          <center><p style="font-size: 2.5vh;">Reportages:</p></center>
+          <%= link_to "http://agenciarede.com/mulher-carioca-faz-sucesso-como-empreendedora-em-sao-paulo/" do %>
+            <%= image_tag "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTVGUuf1wR1KFnuW21uWcY8VU5PZ-hXBeGsrlp3v7JCnA&usqp=CAU&ec=45675147", class: 'img-responsive center-block fit-image img-size', alt: "agencia rede" %> <br>
           <% end %>
+
+          <%= link_to "https://www.jornaldoestadodorio.com.br/empreendedora-carioca-e-homenageada-na-camara-de-municipal-de-sp/" do %>
+            <%= image_tag "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTVGUuf1wR1KFnuW21uWcY8VU5PZ-hXBeGsrlp3v7JCnA&usqp=CAU&ec=45675147", class: 'img-responsive center-block fit-image img-size', alt: "jornal do estado do rio" %> <br>
+          <% end %>
+
+          <%= link_to "https://imulherempreendedora.com.br/empreendedoras/thielle-felix" do %>
+            <%= image_tag "https://scontent.fcgh11-1.fna.fbcdn.net/v/t1.0-9/65526177_1044661179073190_5990017194958782464_n.png?_nc_cat=102&_nc_sid=09cbfe&_nc_ohc=Dfsxn6N9T24AX-L8NLq&_nc_ht=scontent.fcgh11-1.fna&oh=6673eb25c67a7019e807c44e080929c4&oe=5F1FC6E1", class: 'img-responsive center-block fit-image img-size', alt: "Mulheres empreendenoras" %> <br>
+          <% end %>
+
         </div>
     </div>
   </div>
