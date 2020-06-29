@@ -3,82 +3,87 @@
 
 
 <style>
-.videoContainer {
-background: #0F2027;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  width: 100%;
-  height: 80vh;
-  text-align: center;
-  overflow: hidden;
-  margin-top: 0px;
-}
+@import url('https://fonts.googleapis.com/css?family=Barriecito&display=swap');
 
-#videoTrailer {
-  min-width: 100%;
-  max-height: 100%;
-  vertical-align: middle;
-}
-
-.title-text {
+.dot-number {
+  font-family: 'Barriecito', cursive;
   color: white;
   font-size: 6vh;
-  padding: 0.5vh;
-  border-radius: 3px;
+  background: #F0386B;
+  padding: 2vh;
   display:inline-block;
-  padding-left: 1.5vh;
-  padding-right: 1.5vh;
-
+  margin-bottom: -1vh;
+  margin-top: 1vh;
+  height: 90px;
+  width: 90px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  background: black;
 }
 
-.btn-text {
+.dot-text {
+  padding: 2vw;
+  font-size: 2vh;
+  max-width: 80vw;
   color: white;
-  background-color: #F0386B;
-  margin: 20px;
-  font-size: 2.5vh;
+  margin-top: -2vh;
 }
 
-.zoom:hover {
-  transform: scale(1.02);
+.background {
+background-color: #0e5f99;
+background-image: url(http://agenciarede.com/wp-content/uploads/2019/04/loP4TEOo.jpeg);
+background-attachment: fixed;
+background-size: cover;
 }
 
-.logo-img {
-  height: 150px;
+.round-img {
+  height: 200px;
   border-radius: 50%
 }
-
 </style>
 
 
-<div class="videoContainer">
+<div class="background">
+<div style="background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,0.9) 0%, rgba(58,57,131,0.8164040616246498) 52%, rgba(51,137,154,0.9) 100%); border-radius: 3px;">
 
 
-  <img id="videoTrailer" style="object-fit: cover; opacity: 0.2;" src="http://agenciarede.com/wp-content/uploads/2019/04/loP4TEOo.jpeg" alt="sobre/about">
-
-  <div style="position: relative; margin-top: -75vh; color: white;">
+  <div class="container">
+  <br>
+  <br>
+  <!--TITLE-->
+  <div style="position: relative; color: white;">
     <div class="container">
-    <center>
-    <%= image_tag "https://salaodebelezadelivery.com.br//franquias/2/21698/editor-html/4213895.png", class: 'img-responsive center-block fit-image round-img logo-img', alt: "Entrevista Descomplicada" %>
-    <h1 class="" style="font-size: 2.5vh; margin: 2vh;">Masterclass Salao De Beleza delivery</h1>
-    <p style="font-size: 1.7vh;">Tranforme seu salão de beleza em um negócio sem limites</p>
-    <!-- DATA-->
-  <div style="color: white;">
-  <hr style="color:white; max-width: 400px;">
-  <i class="fas fa-calendar-alt" style="font-size: 2vh;"> <p style="padding: 1vh; font-family: 'Arial', cursive; ">25/08 | 20h00</p></i> &nbsp; &nbsp; &nbsp;
-  <i class="fas fa-laptop-code" style="font-size: 2vh;"> <p style="padding: 1vh; font-family: 'Arial', cursive; ">Online</p></i> &nbsp; &nbsp; &nbsp;
-  <i class="fas fa-money-bill-wave" style="font-size: 2vh;"> <p style="padding: 1vh; font-family: 'Arial', cursive; ">100% Grátis</p></i>
-  </div>
-  <!-- DATA END-->
-    <script async data-uid="4a87b324c6" src="https://crafty-architect-8610.ck.page/4a87b324c6/index.js"></script>
-  </center>
+      <center>
+        <%= image_tag "https://salaodebelezadelivery.com.br//franquias/2/21698/editor-html/4213895.png", class: 'img-responsive center-block round-img', alt: "Entrevista Descomplicada" %>
+        <h1 class="" style="font-size: 2.5vh; margin: 2vh;">Masterclass Salao De Beleza delivery</h1>
+        <p style="font-size: 1.7vh;">Tranforme seu salão de beleza em um negócio sem limites</p>
+
+        <!-- DATA-->
+        <div style="color: white;">
+          <hr style="color:white; max-width: 400px;">
+          <i class="fas fa-calendar-alt" style="font-size: 2vh;"> <p style="padding: 1vh; font-family: 'Arial', cursive; ">25/08 | 20h00</p></i> &nbsp; &nbsp; &nbsp;
+          <i class="fas fa-laptop-code" style="font-size: 2vh;"> <p style="padding: 1vh; font-family: 'Arial', cursive; ">Online</p></i> &nbsp; &nbsp; &nbsp;
+          <i class="fas fa-money-bill-wave" style="font-size: 2vh;"> <p style="padding: 1vh; font-family: 'Arial', cursive; ">100% Grátis</p></i>
+        </div>
+        <!-- DATA END-->
+
+        <script async data-uid="4a87b324c6" src="https://crafty-architect-8610.ck.page/4a87b324c6/index.js"></script>
+
+      </center>
     </div>
     <br>
     <br>
     <br>
-
   </div>
+  <!-- TITLE END-->
+  </div>
+
 </div>
+</div>
+
 
 <%= render 'shared/novenoveementa' %>
 
