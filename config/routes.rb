@@ -40,8 +40,8 @@ Rails.application.routes.draw do
 
 #POSTS---------------------------------------------------------------------------------------------
 
-  get "como-nasceu-o-projeto-entrevista-descomplicada", to: 'blog#post0', as: :"como-nasceu-o-projeto-entrevista-descomplicada"  #POST 0
-  get "como-identificar-pontos-de-melhoria-em-processos-seletivos", to: 'blog#post1', as: :"como-identificar-pontos-de-melhoria-em-processos-seletivos" #POST 1
+  get "transformacoes-que-atraves-da-beleza-sao-entregues-em-produtos-de-varios-formatos", to: 'blog#post0', as: :"transformacoes-que-atraves-da-beleza-sao-entregues-em-produtos-de-varios-formatos"  #POST 0
+  get "o-futuro-do-salao-de-beleza", to: 'blog#post1', as: :"o-futuro-do-salao-de-beleza" #POST 1
   get "quais-os-pilares-de-um-bom-curriculo", to: 'blog#post2', as: :"quais-os-pilares-de-um-bom-curriculo" #POST 2
   get "as-5-perguntas-mais-comuns-em-entrevistas", to: 'blog#post3', as: :"as-5-perguntas-mais-comuns-em-entrevistas" #POST 3
   get "como-falar-sobre-qualidades-e-defeitos-em-uma-entrevista-de-trabalho", to: 'blog#post4', as: :"como-falar-sobre-qualidades-e-defeitos-em-uma-entrevista-de-trabalho" #POST 4
