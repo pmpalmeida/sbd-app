@@ -2,84 +2,104 @@
 
 
 
+
+
 <style>
-.videoContainer {
-background: #0F2027;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  width: 100%;
-  height: 85vh;
-  text-align: center;
-  overflow: hidden;
-  margin-top: 0px;
-}
+@import url('https://fonts.googleapis.com/css?family=Barriecito&display=swap');
 
-#videoTrailer {
-  min-width: 100%;
-  max-height: 100%;
-  vertical-align: middle;
-}
-
-.title-text {
+.dot-number {
+  font-family: 'Barriecito', cursive;
   color: white;
   font-size: 6vh;
-  padding: 0.5vh;
-  border-radius: 3px;
+  background: #F0386B;
+  padding: 2vh;
   display:inline-block;
-  padding-left: 1.5vh;
-  padding-right: 1.5vh;
-
+  margin-bottom: -1vh;
+  margin-top: 1vh;
+  height: 90px;
+  width: 90px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  background: black;
 }
 
-.btn-text {
+.dot-text {
+  padding: 2vw;
+  font-size: 2vh;
+  max-width: 80vw;
   color: white;
-  background-color: #F0386B;
-  margin: 20px;
-  font-size: 2.5vh;
-  font-family: 'Barriecito', cursive;
+  margin-top: -2vh;
 }
 
-.zoom:hover {
-  transform: scale(1.02);
+.background {
+background-color: #0e5f99;
+background-image: url(http://agenciarede.com/wp-content/uploads/2019/04/loP4TEOo.jpeg);
+background-attachment: fixed;
+background-size: cover;
 }
 
+.round-img {
+  height: 200px;
+  border-radius: 50%
+}
 </style>
 
 
-<div class="videoContainer">
+<div class="background">
+<div style="background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,0.9) 0%, rgba(58,57,131,0.8164040616246498) 52%, rgba(51,137,154,0.9) 100%); border-radius: 3px;">
 
 
-  <img id="videoTrailer" style="object-fit: cover; opacity: 0.2;" src="/assets/business.jpeg" alt="sobre/about">
-
-  <div style="position: relative; margin-top: -80vh;">
+  <div class="container">
+  <br>
+  <br>
+  <!--TITLE-->
+  <div style="position: relative; color: white;">
     <div class="container">
-    <%= image_tag "logofim.png", height: 120, alt: "Entrevista Descomplicada" %> <br>
-    <h1 class="" style="font-size: 2.5vh; margin: 2vh; color: white; line-height: 20pt; font-weight: normal;">O projeto Entrevista Descomplicada nasceu da <strong>insatisfação com os processos de seleção</strong> das grandes empresas. Cada vez mais nós (candidatos) estamos mais preparados e ainda assim recebemos um <strong>NÃO</strong> em entrevistas <strong>sem nenhum tipo de explicação</strong>. Aqui o candidato vai receber <strong>todos os recursos</strong> sobre como se preparar e conseguir a tão sonhada vaga de trabalho.</h1>
-    <p class="" style="font-size: 2vh; color: white;">Zé Ricardo | Co-fundador da Entrevista Descomplicada </p>
+      <center>
+        <%= image_tag "https://salaodebelezadelivery.com.br//franquias/2/21698/editor-html/4213895.png", class: 'img-responsive center-block round-img', alt: "Entrevista Descomplicada" %>
+        <h1 class="" style="font-size: 3vh; margin: 2vh;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto impedit esse, similique error sed recusandae nostrum aliquid beatae aperiam ullam natus repellendus, accusantium, commodi dicta, eaque consequuntur voluptatibus est non!</h1>
+
+        <!-- DATA-->
+        <div style="color: white;">
+          <hr style="color:white; max-width: 400px;">
+        </div>
+        <!-- DATA END-->
+
+      </center>
     </div>
+    <br>
+    <br>
+    <br>
   </div>
+  <!-- TITLE END-->
+  </div>
+
+</div>
 </div>
 
-<br>
+
+
 
 <div style="background-color: #F7F7F7; padding: 2vh; margin-top: -20px;">
   <div class="container" style="z-index: 1;">
   <br>
   <center>
     <p style="font-size: 3vh;">Venha também fazer parte dessa comunidade que cresce dia após dia</p>
-    <p style="font-size: 2vh;">Inscreva-se 100% grátis e receba por email um modelo de currículo para editar na sua próxima entrevista</p>
-    <script async data-uid="618a01e509" src="https://crafty-architect-8610.ck.page/618a01e509/index.js"></script>
+    <p style="font-size: 2vh;">Inscreva-se 100% grátis</p>
+    <script async data-uid="4a87b324c6" src="https://crafty-architect-8610.ck.page/4a87b324c6/index.js"></script>
   </center>
 
   </div>
   <br>
 </div>
 
+
+<%= render 'shared/quemsomos'%>
+
 <%= render 'shared/depoimentos'%>
-
-</div>
-
 
 </strong>
 
