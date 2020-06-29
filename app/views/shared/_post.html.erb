@@ -72,8 +72,8 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
 
     <center>
 
-      <%= image_tag "logofim.png", height: 100 %>
-      <h3 style="font-size: 2vh;">por Zé Ricardo | co-fundador da Entrevista Descomplicada</h3>
+      <%= image_tag "https://salaodebelezadelivery.com.br//franquias/2/21698/editor-html/4213895.png", height: 130 %>
+      <h3 style="font-size: 2vh;">por Thielle Felix | fundadora do Salão de Beleza Delivery</h3>
       <br>
       <h2 style="font-size: 2vh;" class="hide"><%= @post["date"].html_safe%></h2>
       <h1 style="font-size: 4vh;"><%= @post["title"].html_safe%></h1>
@@ -83,14 +83,15 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
 
     <% if !@post["video"].nil? %>
 
-      <h3 style="font-size: 2vh; font-style: italic;">Veja o tutorial completo:</h3>
+      <h3 style="font-size: 2vh; font-style: italic;">Veja o post completo:</h3>
       <hr style="margin-top: -0.7vh;">
       <%= @post["text"].html_safe%>
       <br>
-
-        <div class="iframe-container-post">
-          <iframe src=<%= @post["video"].html_safe%> frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+        <% if @post["video"] != " " %>
+          <div class="iframe-container-post">
+            <iframe src=<%= @post["video"].html_safe%> frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        <% end %>
 
     <% end %>
     <br>
@@ -99,19 +100,11 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
     <hr style="margin-top: 0vh;">
 
     <%= link_to inscricoes_encerradas_path do %>
-      <div class="btn btn-dark btn-block" style="margin-top: -0.3vh;"><i class="fas fa-book-open"></i> Cursos preparatórios para entrevista</div>
+      <div class="btn btn-dark btn-block" style="margin-top: -0.3vh;"><i class="fas fa-book-open"></i> Formação Salão de Beleza Delivery</div>
     <% end %>
     <br>
 
-    <%= link_to dicas_de_entrevista_path do %>
-      <div class="btn btn-dark btn-block" style="margin-top: -0.3vh;"><i class="fas fa-wrench"></i> Dicas de entrevista</div>
-    <% end %>
-    <br>
 
-    <%= link_to portal_de_vagas_path do %>
-      <div class="btn btn-dark btn-block" style="margin-top: -0.3vh;"><i class="fas fa-laptop"></i> Portal de vagas</div>
-    <% end %>
-    <br>
 
 
 
@@ -120,7 +113,7 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
   <br>
   <br>
   <div style="background-color: white;">
-    <div class="fb-comments" " data-href="http://www.entrevistadescomplicada.org" data-width="" data-numposts="5"></div>
+    <div class="fb-comments" " data-href="https://www.facebook.com/salaodebelezadelivery.com.br" data-width="" data-numposts="10"></div>
   </div>
 
 </div>
