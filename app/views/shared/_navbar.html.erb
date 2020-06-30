@@ -141,11 +141,11 @@ color: gray;
 <div class="">  <!-- div para hide de menu bar -->
 
   <div class="navbar-wagon-right hidden-xs hidden-sm">
-    <a href="https://www.youtube.com/channel/UCsAuZS9eplm4ykzSYwpHeDw" target="_blank"><i class="fab fa-youtube-square icon-style-navbar"></i></a>
-    <a href="https://www.facebook.com/entrevistadescomplicada/" target="_blank"><i class="fab fa-facebook-square icon-style-navbar"></i></a>
-    <a href="https://www.instagram.com/entrevistadescomplicadaoficial/" target="_blank"><i class="fab fa-instagram  icon-style-navbar"></i></a>
-    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter icon-style-navbar hide"></i></a>
-    <a href="https://www.linkedin.com/company/entrevista-descomplicada" target="_blank"><i class="fab fa-linkedin icon-style-navbar"></i></a>
+    <a href="https://www.youtube.com/channel/UCSJlrT44ZLIM77Z6oGIGr3Q" target="_blank"><i class="fab fa-youtube-square icon-style-navbar"></i></a>
+    <a href="https://www.facebook.com/salaodebelezadelivery.com.br" target="_blank"><i class="fab fa-facebook-square icon-style-navbar"></i></a>
+    <a href="https://www.instagram.com/thiellefelix/" target="_blank"><i class="fab fa-instagram  icon-style-navbar"></i></a>
+    <a href="https://twitter.com/thiellefelix" target="_blank"><i class="fab fa-twitter icon-style-navbar"></i></a>
+    <a href="https://br.linkedin.com/in/thielle" target="_blank"><i class="fab fa-linkedin icon-style-navbar"></i></a>
     <%= link_to "Blog", root_path, class: "navbar-wagon-item-cidade navbar-wagon-link" %>
     <%#= link_to "Vídeos", root_path, class: "navbar-wagon-item-cidade navbar-wagon-link" %>
     <%#= link_to "Portal de vagas", portal_de_vagas_path, class: "navbar-wagon-item-cidade navbar-wagon-link" %>
@@ -201,23 +201,28 @@ color: gray;
               <% end %>
             </li>
             <li>
-              <%= link_to "https://www.youtube.com/channel/UCsAuZS9eplm4ykzSYwpHeDw" do %>
+              <%= link_to "https://www.youtube.com/channel/UCSJlrT44ZLIM77Z6oGIGr3Q" do %>
                 <i class="fab fa-youtube-square"></i>  <%= t(".settings", default: "YouTube") %>
               <% end %>
             </li>
             <li>
-              <%= link_to "https://www.facebook.com/entrevistadescomplicada/" do %>
+              <%= link_to "https://www.facebook.com/salaodebelezadelivery.com.br" do %>
                 <i class="fab fa-facebook-square"></i>  <%= t(".settings", default: "Facebook") %>
               <% end %>
             </li>
             <li>
-              <%= link_to "https://www.instagram.com/entrevistadescomplicadaoficial/" do %>
+              <%= link_to "https://www.instagram.com/thiellefelix/" do %>
                 <i class="fab fa-instagram "></i>  <%= t(".settings", default: "Instagram") %>
               <% end %>
             </li>
             <li>
-              <%= link_to "https://www.linkedin.com/company/entrevista-descomplicada" do %>
+              <%= link_to "https://br.linkedin.com/in/thielle" do %>
                 <i class="fab fa-linkedin "></i>  <%= t(".settings", default: "LinkedIn") %>
+              <% end %>
+            </li>
+            <li>
+              <%= link_to "https://twitter.com/thiellefelix" do %>
+                <i class="fab fa-twitter "></i>  <%= t(".settings", default: "Twitter") %>
               <% end %>
             </li>
             <% if user_signed_in? %>
