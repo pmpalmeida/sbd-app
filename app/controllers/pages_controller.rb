@@ -16,15 +16,19 @@ class PagesController < ApplicationController
   end
 
   def obrigado
+    redirect_to(root_path)
   end
 
   def curriculocampeao
+    redirect_to(root_path)
   end
 
   def termosdeuso
+    redirect_to(root_path)
   end
 
   def politicadeprivacidade
+    redirect_to(root_path)
   end
 
   def lan_inscricao
@@ -36,7 +40,7 @@ class PagesController < ApplicationController
   end
 
   def lan_live
-    #redirect_to(root_path)
+    redirect_to(root_path)
     #https://pay.hotmart.com/thanks?bid=1582468627395
   end
 
@@ -45,7 +49,7 @@ class PagesController < ApplicationController
   end
 
   def sua_ajuda
-    #redirect_to(root_path)
+    redirect_to(root_path)
     #redirect_to(lan_inscricao_path)
   end
 
@@ -55,6 +59,7 @@ class PagesController < ApplicationController
 
   #PORTAL DE VAGAS
   def portal_de_vagas
+    redirect_to(root_path)
     @position = rand(100..1000)
     @type = ["Trainee", "Analista", "Coordenador", "Gerente", "Estágio"]
     @local = ["Empresa nacional", "Empresa multinacional"]
@@ -68,11 +73,13 @@ class PagesController < ApplicationController
 
   #LISTA DE VAGAS
   def lista_de_vagas
+    redirect_to(root_path)
 
   end
 
 
   def inscricoes_para_portal_encerradas
+    redirect_to(root_path)
 
   end
 
@@ -80,7 +87,7 @@ class PagesController < ApplicationController
 #Cursos
 
   def novenovecv
-    #redirect_to(inscricoes_encerradas_path)
+    redirect_to(inscricoes_encerradas_path)
   end
 
   def aprovando_em_entrevistas
@@ -88,7 +95,7 @@ class PagesController < ApplicationController
   end
 
   def obrigado_waitlist
-    #redirect_to(inscricoes_encerradas_path)
+    redirect_to(inscricoes_encerradas_path)
   end
 
 
